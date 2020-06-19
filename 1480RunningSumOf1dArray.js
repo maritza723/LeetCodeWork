@@ -25,10 +25,6 @@ var runningSum = function (nums) {
     let sum = 0;
     let ans = [];
 
-
-    // in this for loop we want to keep track of the running 
-    // sum for every element we iterate though
-    // then put that running sum in the ans array
     for (let i = 0; i < nums.length; i++) {
         sum += nums[i];
         ans.push(sum);
@@ -44,3 +40,7 @@ console.log(runningSum([1, 2, 3, 4]));
 
 // example 2:
 console.log(runningSum([1, 1, 1, 1, 1]));
+
+// Accepted!
+// Runtime: 72 ms, faster than 70.23% of JavaScript online submissions for Running Sum of 1d Array.
+// Memory Usage: 36 MB, less than 100.00% of JavaScript online submissions for Running Sum of 1d Array.
