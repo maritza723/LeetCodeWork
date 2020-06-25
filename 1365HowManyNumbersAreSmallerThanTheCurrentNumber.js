@@ -27,15 +27,47 @@
  * @return {number[]}
  */
 var smallerNumbersThanCurrent = function(nums) {
-    
+    let len = nums.length;
+    let newArr = [];
+    let count = 0;
+    let j = 0;
+    for(let i = 0; i < len; i++){    
+        console.log("line 33, newArr: " + newArr);
+        for(let j = 0; j < len; j++){ 
+            if(nums[i] > nums[j]){
+            count++;
+            } 
+        }
+        newArr.push(count);
+        count = 0;
+    }
+    return newArr;
 };
-
-
 // example 1: [4,0,1,1,3]
-// console.log(smallerNumbersThanCurrent([8,1,2,2,3]));
+console.log(smallerNumbersThanCurrent([8,1,2,2,3]));
 
 // example 2: [2,1,0,3] 
-// console.log(smallerNumbersThanCurrent([6,5,4,8]));
+console.log(smallerNumbersThanCurrent([6,5,4,8]));
 
 // example 3: [0,0,0,0]
-// console.log(smallerNumbersThanCurrent([7,7,7,7]));
+console.log(smallerNumbersThanCurrent([7,7,7,7]));
+
+
+// Accepted!!
+// Runtime: 84 ms, faster than 62.30% of JavaScript online submissions for How Many Numbers Are Smaller Than the Current Number.
+// Memory Usage: 36.9 MB, less than 41.72% of JavaScript online submissions for How Many Numbers Are Smaller Than the Current Number.
+
+
+// DEADCODE 
+// let dict = {};
+// for(let i = 0; i < nums.length; i++){     
+//     if(nums[i] in dict){ 
+//         dict[nums[i]]++;
+//     } else { 
+//         dict[nums[i]] = 1; 
+//     }
+//     console.log("dict at line 39: " + `${dict[nums[i]]}`);
+// }
+// // if(dict[nums[] > ]){
+
+// // }
