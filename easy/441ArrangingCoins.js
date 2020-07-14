@@ -51,6 +51,6 @@ var arrangeCoins = function(n) {
 // example 2: 3
 // console.log(arrangeCoins(8));
 
-// Accepted!!
+// Accepted!! 07.02.2020
 // Runtime: 100 ms, faster than 48.56% of JavaScript online submissions for Arranging Coins.
 // Memory Usage: 38.7 MB, less than 9.15% of JavaScript online submissions for Arranging Coins.

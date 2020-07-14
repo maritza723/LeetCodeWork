@@ -47,7 +47,7 @@ var plusOne = function (digits) {
 // test 2:
 // console.log(plusOne([1,9,9]));
 
-// Accepted!!
+// Accepted!! 06.24.2020
 // Runtime: 68 ms, faster than 48.38% of JavaScript online submissions for Plus One.
 // Memory Usage: 33.4 MB, less than 97.17% of JavaScript online submissions for Plus One.
 

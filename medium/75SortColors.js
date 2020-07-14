@@ -46,7 +46,7 @@ var sortColors = function (nums) {
     // example: 
     // console.log(sortColors([2, 0, 2, 1, 1, 0]));
 
-// Accepted!
+// Accepted! 06.29.2020
 // Runtime: 64 ms, faster than 77.06% of JavaScript online submissions for Sort Colors.
 // Memory Usage: 33.6 MB, less than 93.46% of JavaScript online submissions for Sort Colors.
 

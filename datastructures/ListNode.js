@@ -1,5 +1,5 @@
 /***
- * trying to import and export file and modularize my code
+ * trying to import and export file and modularize my code 
  */
 module.exports = class ListNode {
     /**
@@ -11,6 +11,7 @@ module.exports = class ListNode {
         this.next = null;
     }
     /**
+     * 
      * 
      * @param {number} val 
      * @returns {ListNode}

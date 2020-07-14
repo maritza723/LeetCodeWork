@@ -41,6 +41,6 @@ console.log(runningSum([1, 2, 3, 4]));
 // example 2:
 console.log(runningSum([1, 1, 1, 1, 1]));
 
-// Accepted!
+// Accepted! 06.23.2020
 // Runtime: 72 ms, faster than 70.23% of JavaScript online submissions for Running Sum of 1d Array.
 // Memory Usage: 36 MB, less than 100.00% of JavaScript online submissions for Running Sum of 1d Array.

@@ -41,6 +41,6 @@ var firstMissingPositive = function(nums) {
 // example 3: 1
 // console.log(firstMissingPositive([7,8,9,11,12]));
 
-// Accepted!!!
+// Accepted!!! 06.27.2020
 // Runtime: 84 ms, faster than 16.91% of JavaScript online submissions for First Missing Positive.
 // Memory Usage: 35.3 MB, less than 25.01% of JavaScript online submissions for First Missing Positive.

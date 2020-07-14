@@ -35,6 +35,6 @@ console.log(missingNumber([3,0,1]));
 // example 2: 8
 console.log(missingNumber([9,6,4,2,3,5,7,0,1]));
 
-// Accepted!!
+// Accepted!! 06.26.2020
 // Runtime: 444 ms, faster than 5.13% of JavaScript online submissions for Missing Number.
 // Memory Usage: 36.9 MB, less than 55.76% of JavaScript online submissions for Missing Number.

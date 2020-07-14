@@ -35,6 +35,6 @@ var countSmaller = function(nums) {
 // example: [2,1,1,0] 
 console.log(countSmaller([5,2,6,1]));
 
-// Accepted!!
+// Accepted!! 06.22.2020
 // Runtime: 720 ms, faster than 13.37% of JavaScript online submissions for Count of Smaller Numbers After Self.
 // Memory Usage: 39.6 MB, less than 34.30% of JavaScript online submissions for Count of Smaller Numbers After Self.

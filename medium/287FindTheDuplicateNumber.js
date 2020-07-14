@@ -44,6 +44,6 @@ console.log(findDuplicate([1,3,4,2,2]));
 // example 2: 3
 console.log(findDuplicate([3,1,3,4,2]));
 
-// Accepted!!
+// Accepted!! 07.05.2020
 // Runtime: 84 ms, faster than 26.75% of JavaScript online submissions for Find the Duplicate Number.
 // Memory Usage: 36.8 MB, less than 30.15% of JavaScript online submissions for Find the Duplicate Number.

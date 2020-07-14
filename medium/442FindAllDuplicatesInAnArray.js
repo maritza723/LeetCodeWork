@@ -35,6 +35,6 @@ var findDuplicates = function(nums) {
 // example: [2,3]
 console.log(findDuplicates([4,3,2,7,8,2,3,1]));
 
-// Accepted!!
+// Accepted!! 07.06.2020
 // Runtime: 464 ms, faster than 12.54% of JavaScript online submissions for Find All Duplicates in an Array.
 // Memory Usage: 50.2 MB, less than 23.01% of JavaScript online submissions for Find All Duplicates in an Array.

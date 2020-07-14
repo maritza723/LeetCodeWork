@@ -43,7 +43,7 @@ var removeElements = function (head, val) {
     return returnHead;
 };
 
-// Accepted!
+// Accepted! 07.11.2020
 // Runtime: 108 ms, faster than 21.31% of JavaScript online submissions for Remove Linked List Elements.
 // Memory Usage: 41.1 MB, less than 5.13% of JavaScript online submissions for Remove Linked List Elements.
 

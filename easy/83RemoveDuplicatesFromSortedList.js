@@ -62,6 +62,6 @@ var deleteDuplicates = function(head) {
 // // myList.print();
 // deleteDuplicates(myList).print();
 
-// Accepted!!
+// Accepted!! 07.13.2020
 // Runtime: 172 ms, faster than 5.78% of JavaScript online submissions for Remove Duplicates from Sorted List.
 // Memory Usage: 38.2 MB, less than 13.94% of JavaScript online submissions for Remove Duplicates from Sorted List.

@@ -44,7 +44,7 @@ var moveZeroes = function(nums) {
 // test 3:
 // console.log(moveZeroes([4,2,4,0,0,3,0,5,1,0]));
 
-// Accepted!!
+// Accepted!! 06.20.2020
 // Runtime: 124 ms, faster than 5.63% of JavaScript online submissions for Move Zeroes.
 // Memory Usage: 38.9 MB, less than 5.02% of JavaScript online submissions for Move Zeroes.
 

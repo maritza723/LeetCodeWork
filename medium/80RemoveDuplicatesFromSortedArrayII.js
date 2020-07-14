@@ -45,6 +45,6 @@ console.log(removeDuplicates([1,1,1,2,2,3]));
 // example 2: 7 [0,0,1,1,2,3,3]
 console.log(removeDuplicates([0,0,1,1,1,1,2,3,3]));
 
-// Accepted!!
+// Accepted!! 06.30.2020
 // Runtime: 92 ms, faster than 19.90% of JavaScript online submissions for Remove Duplicates from Sorted Array II.
 // Memory Usage: 38.6 MB, less than 5.15% of JavaScript online submissions for Remove Duplicates from Sorted Array II.

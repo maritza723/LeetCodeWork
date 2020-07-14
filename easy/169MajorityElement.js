@@ -42,6 +42,6 @@ var majorityElement = function(nums) {
 // console.log(majorityElement([2,2,1,1,1,2,2]));
 
 
-// Accepted!
+// Accepted! 06.20.2020
 // Runtime: 80 ms, faster than 20.31% of JavaScript online submissions for Majority Element.
 // Memory Usage: 38.7 MB, less than 9.96% of JavaScript online submissions for Majority Element.
