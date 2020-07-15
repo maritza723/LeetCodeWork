@@ -23,13 +23,39 @@ const ListNode = require('../datastructures/ListNode.js')
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function (head) {
+var deleteDuplicatesInPlace = function (head) {
     if (head === null || head.next === null) { return head; }
+    let curr = head;
+    let front = curr.next;
+    while (curr.val === front.val) {
+        console.log("while head loop");
+        head = front.next;
+        curr = front;
+        front = front.next;
 
+    }
+    curr = head;
+    let back = curr;
+    while (front != null) {
+        if (curr.val != front.val && back.next != curr.next) {
+            console.log("while-if")
+            back = curr;
+        } else if (curr.val === front.val) {
+            console.log("else if")
+            back.next = front.next;
+        }
+        curr = front;
+        front = front.next;
+    }
+    return head;
+};
+
+var deleteDuplicatesWithDict = function (head) {
+    if (head === null || head.next === null) { return head; }
+    let back = head;
     let curr = head;
     let front = head.next;
     let dict = {};
-    let count = 1;
     while (front != null) {
         if (curr.val in dict) {
             dict[curr.val]++;
@@ -38,7 +64,6 @@ var deleteDuplicates = function (head) {
         }
         curr = front;
         front = front.next;
-        count++;
     }
     if (curr.val in dict) {
         dict[curr.val]++;
@@ -47,37 +72,22 @@ var deleteDuplicates = function (head) {
     }
     console.log(dict);
     let newNode = new ListNode(head.val);
-    let runner = newNode;
+    console.log(newNode.val + "-" + head.val)
     for (let key in dict) {
-        console.log(newNode);
-        while (runner.next != null) {
-            if (val == 1) {
-                runner.next = Number(dict[key]);
-                runner = runner.next;
-            }
+        if (){
+            
         }
 
-        // 
-        //     if(dict[key] == 1 && runner.next != null){
-        //         runner.next = Number(key);
-        //         console.log("line 55")
 
-        // } else 
-        // if(dict[key] == 1){
-        //     newNode.next = Number(key);
-        // }
-
-        }
-        return newNode;
-    };
-
-    const myList = new ListNode(1);
-    for (let val of [2, 3, 3, 4, 4, 5]) {
-        myList.add(val);
     }
-    console.log("example one: " + myList);
-    myList.print();
-    deleteDuplicates(myList).print();
+};
+// const myList = new ListNode(1);
+// for (let val of [2, 3, 3, 4, 4, 5]) {
+//     myList.add(val);
+// }
+// console.log("example one: " + myList);
+// myList.print();
+// deleteDuplicates(myList).print();
 // // expected: [1,2,5]
 
 // const myList = new ListNode(1);
@@ -88,3 +98,62 @@ var deleteDuplicates = function (head) {
 // // myList.print();
 // deleteDuplicates(myList).print();
 // // expected: [2,3]
+
+// const myList = new ListNode(1);
+// for (let val of [1]) {
+//     myList.add(val);
+// }
+// console.log("example three: " + myList);
+// myList.print();
+// deleteDuplicates(myList).print();
+// // expected: null
+
+// DEADCODE 
+// let dict = {};
+// while (front != null) {
+//     if (curr.val in dict) {
+//         dict[curr.val]++;
+//     } else {
+//         dict[curr.val] = 1;
+//     }
+//     curr = front;
+//     front = front.next;
+// }
+// if (curr.val in dict) {
+//     dict[curr.val]++;
+// } else {
+//     dict[curr.val] = 1;
+// }
+// console.log(dict);
+// let newNode = new ListNode(head.val);
+// console.log(newNode.val + "-" + head.val)
+// for (let key in dict) {
+//     if()
+
+
+// let runner = head;
+// 
+//     console.log("key: " + key);
+//     while (runner != null) {
+//         // console.log(key.val)
+//         // if(runner == 1) {
+//             console.log(val)
+//             runner = Number(key);
+
+//             newNode.next = runner;
+//         console.log(newNode);
+//     }
+//     }
+
+    // 
+    //     if(dict[key] == 1 && runner.next != null){
+    //         runner.next = Number(key);
+    //         console.log("line 55")
+
+    // } else 
+    // if(dict[key] == 1){
+    //     newNode.next = Number(key);
+    // }
+
+    // }
+    // return newNode;
