@@ -27,13 +27,14 @@ var deleteDuplicatesInPlace = function (head) {
     if (head === null || head.next === null) { return head; }
     let curr = head;
     let front = curr.next;
-    while (curr.val === front.val) {
+    while (curr.val == front.val) {
         console.log("while head loop");
         head = front.next;
         curr = front;
         front = front.next;
 
     }
+    if (head === null || head.next === null) { return head; }
     curr = head;
     let back = curr;
     while (front != null) {
@@ -49,6 +50,34 @@ var deleteDuplicatesInPlace = function (head) {
     }
     return head;
 };
+
+
+// const myList = new ListNode(1);
+// for (let val of [2, 3, 3, 4, 4, 5]) {
+//     myList.add(val);
+// }
+// console.log("example one: " + myList);
+// myList.print();
+// deleteDuplicatesinPlace(myList).print();
+// // expected: [1,2,5]
+
+// const myList = new ListNode(1);
+// for (let val of [1, 1, 2, 3]) {
+//     myList.add(val);
+// }
+// console.log("example two" + myList);
+// // myList.print();
+// deleteDuplicatesinPlace(myList).print();
+// // expected: [2,3]
+
+const myList = new ListNode(1);
+for (let val of [1]) {
+    myList.add(val);
+}
+console.log("example three: " + myList);
+myList.print();
+deleteDuplicatesInPlace(myList).print();
+// // expected: null
 
 var deleteDuplicatesWithDict = function (head) {
     if (head === null || head.next === null) { return head; }
@@ -74,39 +103,13 @@ var deleteDuplicatesWithDict = function (head) {
     let newNode = new ListNode(head.val);
     console.log(newNode.val + "-" + head.val)
     for (let key in dict) {
-        if (){
+        // if (){
             
-        }
+        // }
 
 
     }
 };
-// const myList = new ListNode(1);
-// for (let val of [2, 3, 3, 4, 4, 5]) {
-//     myList.add(val);
-// }
-// console.log("example one: " + myList);
-// myList.print();
-// deleteDuplicates(myList).print();
-// // expected: [1,2,5]
-
-// const myList = new ListNode(1);
-// for (let val of [1, 1, 2, 3]) {
-//     myList.add(val);
-// }
-// console.log("example two" + myList);
-// // myList.print();
-// deleteDuplicates(myList).print();
-// // expected: [2,3]
-
-// const myList = new ListNode(1);
-// for (let val of [1]) {
-//     myList.add(val);
-// }
-// console.log("example three: " + myList);
-// myList.print();
-// deleteDuplicates(myList).print();
-// // expected: null
 
 // DEADCODE 
 // let dict = {};
