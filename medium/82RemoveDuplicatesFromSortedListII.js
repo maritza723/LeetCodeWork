@@ -27,14 +27,17 @@ var deleteDuplicatesInPlace = function (head) {
     if (head === null || head.next === null) { return head; }
     let curr = head;
     let front = curr.next;
+    if(front.next == null){
+        console.log("***")
+        return ;
+    }
     while (curr.val == front.val) {
         console.log("while head loop");
         head = front.next;
         curr = front;
         front = front.next;
-
     }
-    if (head === null || head.next === null) { return head; }
+    // if (head === null || head.next === null) { return head; }
     curr = head;
     let back = curr;
     while (front != null) {
@@ -58,7 +61,7 @@ var deleteDuplicatesInPlace = function (head) {
 // }
 // console.log("example one: " + myList);
 // myList.print();
-// deleteDuplicatesinPlace(myList).print();
+// deleteDuplicatesInPlace(myList).print();
 // // expected: [1,2,5]
 
 // const myList = new ListNode(1);
@@ -67,7 +70,7 @@ var deleteDuplicatesInPlace = function (head) {
 // }
 // console.log("example two" + myList);
 // // myList.print();
-// deleteDuplicatesinPlace(myList).print();
+// deleteDuplicatesInPlace(myList).print();
 // // expected: [2,3]
 
 const myList = new ListNode(1);
