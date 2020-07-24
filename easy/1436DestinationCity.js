@@ -65,7 +65,7 @@ const destCity = (paths) => {
 
 
 let ex1 = [["London", "New York"], ["New York", "Lima"], ["Lima", "Sao Paulo"]];
-console.log(destCity(ex1)); // San Palo 
+console.log(destCity(ex1)); // Sao Paulo 
 let ex2 = [["B", "C"], ["D", "B"], ["C", "A"]];
 console.log(destCity(ex2)); // A
 let ex3 = [["A", "Z"]];
