@@ -19,21 +19,30 @@
  * @param {number} numRows
  * @return {number[][]}
  */
-var generate = function(numRows) {
-    if(numRows == 1){
-        return [1];
+var generate = function (numRows) {
+    if (numRows == 0) {
+        return [];
     }
-    let ans = [[1], [1,1]];
-    let run = [1,1];
-    for(let i = 2; i <= numRows; i++){       
-        run[i]+=1;
-        run[run.length - 1]+=1;
-        run.unshift(1);
+    let ans = [[1]];
+
+    for (let i = 1; i < numRows; i++) {
+        let run = [1];
+        let arr = ans[i - 1];
+        for (let j = 1; j < arr.length; j++) {
+            let sum = arr[j - 1] + arr[j];
+            run.push(sum);
+        }
         run.push(1);
         ans.push(run);
+
     }
+
     return ans;
 };
+
+// Accepted!! 08.01.2020
+// Runtime: 68 ms, faster than 74.08% of JavaScript online submissions for Pascal's Triangle.
+// Memory Usage: 36.8 MB, less than 6.67% of JavaScript online submissions for Pascal's Triangle.
 
 // example 1:
 console.log(generate(5));
