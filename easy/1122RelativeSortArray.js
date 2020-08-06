@@ -47,7 +47,7 @@ var relativeSortArray = function (arr1, arr2) {
     return rtnArr;
 };
 
-//Accepted!! 
+// Accepted!! 08.05.2020
 // Runtime: 96 ms, faster than 19.87% of JavaScript online submissions for Relative Sort Array.
 // Memory Usage: 37.2 MB, less than 28.57% of JavaScript online submissions for Relative Sort Array.
 
