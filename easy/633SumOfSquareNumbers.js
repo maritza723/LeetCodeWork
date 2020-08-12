@@ -20,7 +20,7 @@ var judgeSquareSum = function(c) {
     for(let i = 0; Math.pow(i, 2) <= c; i++){
         for(let j = 0; Math.pow(j, 2) <= c; j++){
         if(Math.pow(i, 2) + Math.pow(j, 2) == c){
-            console.log(i + "   " + j)
+            // console.log(i + "   " + j)
             return true;
             }
         }
@@ -28,16 +28,14 @@ var judgeSquareSum = function(c) {
     return false;
 };
 
-
-
-// // example 1: True
-// console.log(judgeSquareSum(5));
+// example 1: True
+console.log(judgeSquareSum(5));
  
-// // example 2: False
-// console.log(judgeSquareSum(3));
+// example 2: False
+console.log(judgeSquareSum(3));
 
-// // example 3: True
-// console.log(judgeSquareSum(4));
+// example 3: True
+console.log(judgeSquareSum(4));
 
-// // example 4: False **time limit**
-// console.log(judgeSquareSum(2147483645));
+// example 4: False **time limit**
+console.log(judgeSquareSum(2147483645));
