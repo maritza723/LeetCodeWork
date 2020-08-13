@@ -53,7 +53,8 @@ var findLucky = function(arr) {
 } 
   return -1;
 
-};
+\
+';IUYTREW v,./};
 
 // Accepted!! 08.12.2020
 // Runtime: 84 ms, faster than 51.40% of JavaScript online submissions for Find Lucky Integer in an Array.
