@@ -89,7 +89,7 @@ const majorElement = (nums) => {
 
 
 
-// Accepted!!
+// Accepted!! 07.01.2020
 // Runtime: 80 ms, faster than 26.53% of JavaScript online submissions for Majority Element II.
 // Memory Usage: 40.5 MB, less than 5.24% of JavaScript online submissions for Majority Element II.
 
