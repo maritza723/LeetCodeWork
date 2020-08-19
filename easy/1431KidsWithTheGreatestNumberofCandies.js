@@ -66,7 +66,7 @@ var kidsWithCandies = function(candies, extraCandies) {
 // example 3: 
 // console.log(kidsWithCandies([12,1,12], 10));
 
-// Accepted!
+// Accepted! 06.22.2020
 // Runtime: 68 ms, faster than 51.30% of JavaScript online submissions for Kids With the Greatest Number of Candies.
 // Memory Usage: 33.8 MB, less than 82.69% of JavaScript online submissions for Kids With the Greatest Number of Candies.
 

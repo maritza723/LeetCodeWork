@@ -53,7 +53,7 @@ console.log(smallerNumbersThanCurrent([6,5,4,8]));
 console.log(smallerNumbersThanCurrent([7,7,7,7]));
 
 
-// Accepted!!
+// Accepted!! 06.23.2020
 // Runtime: 84 ms, faster than 62.30% of JavaScript online submissions for How Many Numbers Are Smaller Than the Current Number.
 // Memory Usage: 36.9 MB, less than 41.72% of JavaScript online submissions for How Many Numbers Are Smaller Than the Current Number.
 

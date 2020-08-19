@@ -83,7 +83,7 @@ var addToArrayForm = function (A, K) {
     return ans; 
 };
     
-// Accepted!!
+// Accepted!! 07.09.2020
 // Runtime: 156 ms, faster than 56.94% of JavaScript online submissions for Add to Array-Form of Integer.
 // Memory Usage: 44.7 MB, less than 6.67% of JavaScript online submissions for Add to Array-Form of Integer.
 

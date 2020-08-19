@@ -58,7 +58,7 @@ var findDisappearedNumbers = function(nums) {
 // test 2: [1]
 // console.log(findDisappearedNumbers([1,1,2,2]));
 
-// Accepted!!
+// Accepted!! 06.28.2020
 // Runtime: 696 ms, faster than 25.07% of JavaScript online submissions for Find All Numbers Disappeared in an Array.
 // Memory Usage: 49.9 MB, less than 18.54% of JavaScript online submissions for Find All Numbers Disappeared in an Array.
 

@@ -1,10 +1,3 @@
-var ListNode = require('../datastructures/ListNode');
-
-// function ListNode(val, next) {
-//     this.val = (val===undefined ? 0 : val)
-//     this.next = (next===undefined ? null : next)
-// }
-
 /**206. Reverse Linked List
 * Reverse a singly linked list.
 * 
@@ -15,6 +8,12 @@ var ListNode = require('../datastructures/ListNode');
 * 
 * Definition for singly-linked list.
 */
+var ListNode = require('../datastructures/ListNode');
+
+// function ListNode(val, next) {
+//     this.val = (val===undefined ? 0 : val)
+//     this.next = (next===undefined ? null : next)
+// }
 /**
  * @param {ListNode} head
  * @return {ListNode}
@@ -40,7 +39,7 @@ var reverseList = function (head) {
     
 };
 
-// Accepted!!
+// Accepted!! 07.12.2020
 // Runtime: 76 ms, faster than 42.68% of JavaScript online submissions for Reverse Linked List.
 // Memory Usage: 36.8 MB, less than 9.56% of JavaScript online submissions for Reverse Linked List.
 
