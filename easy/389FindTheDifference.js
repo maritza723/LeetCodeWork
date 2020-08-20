@@ -38,7 +38,7 @@ var findTheDifference = function(s, t) {
             
         }
     }
-    
+
     return ans[0];
 };
 

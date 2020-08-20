@@ -41,14 +41,14 @@ var deleteDuplicates = function(head) {
 
 };
 
-const myList = new ListNode(1);
-for (let val of [2, 3, 3, 4, 4, 5]) {
-    myList.add(val);
-}
-console.log("example one" + myList);
-// myList.print(); 
-deleteDuplicates(myList).print();
-console.log(dict);
+// const myList = new ListNode(1);
+// for (let val of [2, 3, 3, 4, 4, 5]) {
+//     myList.add(val);
+// }
+// console.log("example one" + myList);
+// // myList.print(); 
+// deleteDuplicates(myList).print();
+// console.log(dict);
 // expected: [1,2,5]
 
 // const myList = new ListNode(1);
