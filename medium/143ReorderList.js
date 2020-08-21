@@ -37,7 +37,7 @@ var reorderList = function (head) {
             runner = runner.next;
         }
         // console.log("reassignment")
-        runner.next = null;    // need to reassign to null :|
+        runner.next = null;    
         back.next = front;
         front.next = curr;
         back = curr;
@@ -49,7 +49,7 @@ var reorderList = function (head) {
         // }
         
     }
-    runner.next = null;    // need to reassign to null :|
+    runner.next = null;    
     back.next = front;
     // front.next = curr;
     
@@ -60,6 +60,10 @@ var reorderList = function (head) {
 // Accepted!! 08.20.2020
 // Runtime: 992 ms, faster than 5.02% of JavaScript online submissions for Reorder List.
 // Memory Usage: 45.5 MB, less than 13.80% of JavaScript online submissions for Reorder List.
+
+
+
+
 
 
 // let ex1 = new ListNode(1);
@@ -76,11 +80,6 @@ var reorderList = function (head) {
 //     runner= runner.next;
 // }
 
-// I would need to draw this out, what is happening though?
-// i sent you a pic of what i boarded earlier
-// if you want we can zoom and you can talk to me while i white board it
-// Ya I am down :)
-// meeting id 791 8396 9339 i'll text you password
 
 
 // console.log();
