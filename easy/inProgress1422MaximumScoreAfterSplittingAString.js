@@ -101,3 +101,43 @@ var maxScore = function (s) {
     //     console.log(max)
     // }
     // return max;
+
+    var maxScoreLia = function (s) {
+        let arrZeroCount = [], arrOneCount = [], count = 0, len = s.length;
+    ​
+        // one loop to count the amount of zeros at that current index
+        for (let i = 0; i < len; i++) {
+            if (s[i] == "0") {
+                count++;
+            }
+            arrZeroCount.push(count);
+        }
+        // console.log(arrZeroCount);
+        // console.log(count, "amount of zeros");
+        // reset count;
+        count = 0;
+    ​
+        // set backwards thought the s string to count the amount of ones 
+        // from that index looking ahead
+        for (let i = len - 1; i > 0; i--) {
+            if (s[i] == "1") { count++; }
+            arrOneCount.unshift(count);
+        }
+        // console.log(count + " amount of ones");
+        // console.log(arrOneCount);
+        // console.log([4,3,2,1,1]);
+        // now we will use count as a holder for max
+        count = 0;
+    ​
+        for (let i = 0; i < len - 1; i++) {
+            if (arrZeroCount[i] + arrOneCount[i] > count) {
+                count = arrZeroCount[i] + arrOneCount[i];
+            }
+        }
+        return count;
+        /** 
+         * Runtime: 84 ms, faster than 74.83% of JavaScript online submissions for Maximum Score After Splitting a String.
+         * Memory Usage: 37.6 MB, less than 51.02% of JavaScript online submissions for Maximum Score After Splitting a String.
+         */
+    };
+    
