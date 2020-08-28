@@ -88,9 +88,3 @@ var restoreString = function(s, indices) {
 
 
 
-//     nums.splice(0, 1);
-//     for(let i = 0; i < len; i+=2){
-//         if(alpha.length > 0 && nums.length > 0){
-//         ansStr= ansStr + alpha[i] + nums[i]; 
-//     }
-// }
