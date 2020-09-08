@@ -31,7 +31,7 @@ var wordPattern = function (pattern, str) {
     let slen = str.length;
     let j = 0;
     let dict = {};
-    for (let i = 0; i < pat; i++) {
+    for (let i = 0; i < pat; i++) {     // build a dict 
         let run = "";
         while(str[j] != " "){
             if(j >= slen){
@@ -40,9 +40,6 @@ var wordPattern = function (pattern, str) {
             run += str[j];
             j++;
         } 
-        console.log(run);
-        // console.log(pattern[i]);
-        // console.log(dict[pattern[i]]);
         // console.log(dict)
         if(pattern[i] in dict && dict[pattern[i]] != run){
             console.log("line 41");
@@ -57,7 +54,7 @@ var wordPattern = function (pattern, str) {
         
     }
     
-    console.log(dict)
+    // console.log(dict)
     return true;
 };
 
@@ -66,7 +63,7 @@ var wordPattern = function (pattern, str) {
 // console.log(wordPattern("abba", "dog cat cat dog"));
 
 // // example 7:
-// console.log(wordPattern("abc", "b c a"));
+console.log(wordPattern("abc", "b c a"));
 
 
 
@@ -86,8 +83,6 @@ var wordPattern = function (pattern, str) {
 // // example 6:
 // console.log(wordPattern("aaa", "aa aa aa aa"));
 
-// // example 7:
-// console.log(wordPattern("abc", "b c a"));
 
 
 /** FIRST TRY
