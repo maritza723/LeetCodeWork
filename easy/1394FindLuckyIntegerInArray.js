@@ -30,31 +30,30 @@
  * @param {number[]} arr
  * @return {number}
  */
-var findLucky = function(arr) {
-  let dict = {};
-  let ans = [];
-  arr.sort((a, b) => (b - a));
-  console.log(arr)
-  let len =arr.length;
-  for(let i = 0; i < len; i++){
-      if(arr[i] in dict){
-          dict[arr[i]]++;
-      } else {
-          dict[arr[i]] = 1;
-      }
-  }  
-  for(let i = 0; i < len; i++){
-    if(arr[i] == dict[arr[i]]){
-        ans = dict[arr[i]];
-        return ans;
-    // } else {
-    //     dict[arr[i]] = 1;
+var findLucky = function (arr) {
+    let dict = {};
+    let ans = [];
+    arr.sort((a, b) => (b - a));
+    console.log(arr)
+    let len = arr.length;
+    for (let i = 0; i < len; i++) {
+        if (arr[i] in dict) {
+            dict[arr[i]]++;
+        } else {
+            dict[arr[i]] = 1;
+        }
     }
-} 
-  return -1;
+    for (let i = 0; i < len; i++) {
+        if (arr[i] == dict[arr[i]]) {
+            ans = dict[arr[i]];
+            return ans;
+            // } else {
+            //     dict[arr[i]] = 1;
+        }
+    }
+    return -1;
 
-\
-';IUYTREW v,./};
+};
 
 // Accepted!! 08.12.2020
 // Runtime: 84 ms, faster than 51.40% of JavaScript online submissions for Find Lucky Integer in an Array.
