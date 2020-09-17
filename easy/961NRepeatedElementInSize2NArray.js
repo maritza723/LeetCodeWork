@@ -38,6 +38,28 @@ var repeatedNTimes = function(A) {
 // Memory Usage: 42.3 MB, less than 37.77% of JavaScript online submissions for N-Repeated Element in Size 2N Array.
 
 
+/**
+ * @param {number[]} A
+ * @return {number}
+ */
+var repeatedNTimesOptimized = function(A) {
+    let len = A.length;
+    let dict = {};
+    for(let i = 0; i < len; i++){
+        if(A[i] in dict){
+            dict[A[i]]++;
+        } else { dict[A[i]] = 1; }
+        if(dict[A[i]] == len/2){
+            return A[i];
+        }
+    }
+    
+};
+
+
+// Accepted!! 09.17.2020
+// Runtime: 104 ms, faster than 45.84% of JavaScript online submissions for N-Repeated Element in Size 2N Array.
+// Memory Usage: 42.5 MB, less than 34.68% of JavaScript online submissions for N-Repeated Element in Size 2N Array.
 
 // example 1: 3
 // console.log(repeatedNTimes([1,2,3,3])); 
