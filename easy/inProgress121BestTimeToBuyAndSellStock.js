@@ -1,4 +1,4 @@
-/**OLD!!!
+/**121. Best Time to Buy and Sell Stock
  * Say you have an array for which the ith element is the price of a given stock on day i.
  * 
  * If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
@@ -20,47 +20,40 @@
  * @return {number}
  */
 var maxProfit = function(prices) {
-    let profit = 0;
-    if(prices.length <= 1){
-        return 0;
-    }
-    if(prices.length === 2 && prices[0] < prices[1]){
-        profit = prices[1] - prices[0];
-        return profit;
-    } else if (prices.length === 2 && prices[0] >= prices[1]){
-        return 0;
-    }
-    let buy = prices[0];
-    let sell = 0;
-    // console.log(min + ' , ' + max)
-    let buyday = 0;
-    for(let i = 1; i < prices.length - 1; i++){
-        if(prices[i] <= buy && prices[i] != 0){
-            buy = prices[i];
-            buyday = i;
-            console.log("IF buy: " + buy + ", buyday: " + buyday)
-        }      
-    }
-    console.log("line 44 buy: " + buy + ", buyday: " + buyday)
-    for(let i = buyday; i < prices.length; i++){
+    let len = prices.length;
+    let max = prices[len - 1];
+    let min = prices[0];
+    let ans = 0;
+    for(let i = 0; i < len - 1; i++){
+        if(prices[i] < min){
+            min = prices[i];
+        } 
         
-        if(prices[i] > sell){
-            sell = prices[i];
-            console.log("for sell: " + sell + ", buy: " + buy)  
-        }      
+        for(let j = len - 1; j > i; j--){
+            
+            // console.log(max);
+            if(prices[j] > max){
+                max = prices[j];
+            }
+            if(min >= max){
+                max = prices[len - 1];
+            } 
+            
+        }
+        console.log(max + "\t" + min);
+        ans = max - min;
     }
-    profit = sell - buy;
-    if(profit <= 0){
+    if(ans <= 0){
         return 0;
-    } else {
-    return profit;
-    }
+    } else { return ans; }
+    
+    
 };
 
 // example 1: 5
 // console.log(maxProfit([7,1,5,3,6,4]));
 
-// example 2: 0
+// example 2: 0 
 // console.log(maxProfit([7,6,4,3,1]));
 
 // test 1: 0
@@ -75,11 +68,11 @@ var maxProfit = function(prices) {
 // test 4: 3
 // console.log(maxProfit([1,2,4]));
 
-// test 5: 4
+// test 5: 4 **not working
 // console.log(maxProfit([3,2,6,5,0,3]));
 
-// test 6: 1
-console.log(maxProfit([2,1,2,1,0,0,1]));
+// test 6: 1 **not working
+// console.log(maxProfit([2,1,2,1,0,0,1]));
 
 
 // DEADCODE
@@ -115,3 +108,40 @@ console.log(maxProfit([2,1,2,1,0,0,1]));
 // } else {
 // return profit;
 // }
+
+
+        // let profit = 0;
+        //     if(prices.length <= 1){
+        //         return 0;
+        //     }
+        //     if(prices.length === 2 && prices[0] < prices[1]){
+        //         profit = prices[1] - prices[0];
+        //         return profit;
+        //     } else if (prices.length === 2 && prices[0] >= prices[1]){
+        //         return 0;
+        //     }
+        //     let buy = prices[0];
+        //     let sell = 0;
+        //     // console.log(min + ' , ' + max)
+        //     let buyday = 0;
+        //     for(let i = 1; i < prices.length - 1; i++){
+        //         if(prices[i] <= buy && prices[i] != 0){
+        //             buy = prices[i];
+        //             buyday = i;
+        //             console.log("IF buy: " + buy + ", buyday: " + buyday)
+        //         }      
+        //     }
+        //     console.log("line 44 buy: " + buy + ", buyday: " + buyday)
+        //     for(let i = buyday; i < prices.length; i++){
+                
+        //         if(prices[i] > sell){
+        //             sell = prices[i];
+        //             console.log("for sell: " + sell + ", buy: " + buy)  
+        //         }      
+        //     }
+        //     profit = sell - buy;
+        //     if(profit <= 0){
+        //         return 0;
+        //     } else {
+        //     return profit;
+        //     }
