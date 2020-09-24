@@ -76,3 +76,46 @@ var findTheDifference = function(s, t) {
 //         return t[i];
 //     }       
 // }
+
+
+var findTheDifferenceDict = function(s, t) {
+    let len = s.length;
+    let lenT = t.length;
+    let sDict = {};
+    let tDict = {};
+    for(let i = 0; i <= len; i++){
+        if(s[i] in sDict){
+            sDict[s[i]]++;
+        } else { sDict[s[i]] = 1; }
+    }
+    for(let i = 0; i <= lenT; i++){
+        if(t[i] in tDict){
+            tDict[t[i]]++;
+        } else { tDict[t[i]] = 1; }
+    }
+    // console.log(tDict);
+    // console.log(sDict);
+    for(let i = 0; i < lenT; i++){
+        if(t[i] in sDict && tDict[t[i]] === sDict[t[i]]){
+            continue;
+
+        } else if(!(t[i] in sDict) || tDict[t[i]] != sDict[t[i]]){
+            return t[i];
+        }
+    }
+
+};
+
+
+// Accepted!!! 09.24.2020
+// Runtime: 136 ms, faster than 5.53% of JavaScript online submissions for Find the Difference.
+// Memory Usage: 40.2 MB, less than 7.31% of JavaScript online submissions for Find the Difference.
+
+// example: a
+// console.log(findTheDifferenceDict("a", "aa"));
+
+// example: e
+// console.log(findTheDifferenceDict("abcd", "abcde"));
+
+// example: a
+// console.log(findTheDifferenceDict("ae", "aea"));
