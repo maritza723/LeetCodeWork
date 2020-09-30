@@ -71,8 +71,8 @@ var isPalindrome = function(s) {
 };
 
 // Accepted!! 09.27.2020
-// Runtime: 200 ms, faster than 5.08% of JavaScript online submissions for Valid Palindrome.
-// Memory Usage: 48.5 MB, less than 5.01% of JavaScript online submissions for Valid Palindrome.
+// Runtime: 104 ms, faster than 29.41% of JavaScript online submissions for Valid Palindrome.
+// Memory Usage: 42.7 MB, less than 29.96% of JavaScript online submissions for Valid Palindrome.
 
 
 // console.log("true: ");
