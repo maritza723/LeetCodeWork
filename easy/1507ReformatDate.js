@@ -25,7 +25,6 @@
  * @return {string}
  */
 var reformatDate = function(date) {
-    let len = date.length - 1;
     let dict = {
         "Jan": "01", 
         "Feb": "02", 
@@ -70,6 +69,6 @@ var reformatDate = function(date) {
 // Runtime: 72 ms, faster than 85.59% of JavaScript online submissions for Reformat Date.
 // Memory Usage: 38.7 MB, less than 24.77% of JavaScript online submissions for Reformat Date.
 
-console.log(reformatDate("20th Oct 2052") + " == 2052-10-20");
-console.log(reformatDate("6th Jun 1933") + " == 1933-06-06");
-console.log(reformatDate("26th May 1960") + " == 1960-05-26"); 
+// console.log(reformatDate("20th Oct 2052") + " == 2052-10-20");
+// console.log(reformatDate("6th Jun 1933") + " == 1933-06-06");
+// console.log(reformatDate("26th May 1960") + " == 1960-05-26"); 
