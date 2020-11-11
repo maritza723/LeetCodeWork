@@ -35,14 +35,22 @@ There is no way to reshape a 2 * 2 matrix to a 2 * 4 matrix. So output the origi
  * @return {number[][]}
  */
 var matrixReshape = function(nums, r, c) {
-    
+    let ans = [];
+    let add = [];
+    let len = nums.length;
+    for (let i  = 0; i < r; i++){
+        add = [];
+        for (let j = 0; j < len; j++){
+            add.push(nums[i][j]);
+        }
+        ans.push(add);
+    }
+    if(ans.length == 1){ 
+        return add; 
+    } else { return ans; }
 };
 
-console.log(matrixReshape([[1,2],
- [3,4]], 1, 4) + " == [[1,2,3,4]]");
-
-console.log(matrixReshape([[1,2],
- [3,4]], 2, 4) + " ==  [[1,2], 
-[3,4]]
-// ");
+console.log(matrixReshape([[1,2],[3,4]], 1, 4) + " == [[1,2,3,4]]");
+console.log();
+console.log(matrixReshape([[1,2],[3,4]], 2, 4) + " ==  [[1,2],[3,4]]");
 // ");
