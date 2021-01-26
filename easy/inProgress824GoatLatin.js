@@ -58,7 +58,7 @@ var toGoatLatin = function (S) {
                 if (!(S[i] in vowels)) {
                     cons = S[i];
                     j++;
-                    console.log(cons);
+                    // console.log(cons);
                 }
                 ans = ans + S[j];
                 j++;
@@ -77,8 +77,6 @@ var toGoatLatin = function (S) {
 };
 
 
-// example 1: "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
-// console.log("example 1: " + toGoatLatin("I speak Goat Latin"));
-
-// example 2: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
-// console.log("example 2: " + toGoatLatin("The quick brown fox jumped over the lazy dog"));
+console.log(toGoatLatin("I speak Goat Latin") + " == Imaa peaksmaaa oatGmaaaa atinLmaaaaa");
+console.log();
+console.log(toGoatLatin("The quick brown fox jumped over the lazy dog") + " == heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa");
