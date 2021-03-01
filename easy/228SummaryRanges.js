@@ -57,12 +57,12 @@ var summaryRanges = function(nums) {
     return ans;
 };
 
-console.log(summaryRanges([0,1,2,4,5,7]) + ' == ["0->2","4->5","7"]');
-console.log();
-console.log(summaryRanges([0,2,3,4,6,8,9]) + ' == ["0","2->4","6","8->9"]');
-console.log();
-console.log(summaryRanges([]) + ' == []');
-console.log();
-console.log(summaryRanges([-1]) + ' == ["-1"]');
-console.log();
-console.log(summaryRanges([0]) + ' == ["0"] ');
+// console.log(summaryRanges([0,1,2,4,5,7]) + ' == ["0->2","4->5","7"]');
+// console.log();
+// console.log(summaryRanges([0,2,3,4,6,8,9]) + ' == ["0","2->4","6","8->9"]');
+// console.log();
+// console.log(summaryRanges([]) + ' == []');
+// console.log();
+// console.log(summaryRanges([-1]) + ' == ["-1"]');
+// console.log();
+// console.log(summaryRanges([0]) + ' == ["0"] ');

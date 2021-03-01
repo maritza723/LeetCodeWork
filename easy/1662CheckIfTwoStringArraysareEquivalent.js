@@ -25,9 +25,12 @@
 var arrayStringsAreEqual = function(word1, word2) {
     let len1 = word1.length;
     let len2 = word2.length;
-    for (let  i = 0; i < len1; i++){
+    let arr1 = split.word1();
+    let arr2 = split.word2();
+    // for (let  i = 0; i < len1; i++){
         
-    }
+    // }
+    console.log(arr1, arr2)
     
 };
 console.log("true");

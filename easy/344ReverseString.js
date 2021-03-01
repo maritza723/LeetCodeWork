@@ -36,11 +36,11 @@ var reverseString = function(s) {
 // Memory Usage: 42.7 MB, less than 62.33% of JavaScript online submissions for Reverse String.
 
 
-// example 1: ["o","l","l","e","h"]
-console.log(reverseString(["h","e","l","l","o"]));
+// // example 1: ["o","l","l","e","h"]
+// console.log(reverseString(["h","e","l","l","o"]));
 
-// example 2: ["h","a","n","n","a","H"]
-console.log(reverseString(["H","a","n","n","a","h"]));
+// // example 2: ["h","a","n","n","a","H"]
+// console.log(reverseString(["H","a","n","n","a","h"]));
 
-// example 3: ["a","m","a","n","a","P"," ",":","l","a","n","a","c"," ","a"," ",",","n","a","l","p"," ","a"," ",",","n","a","m"," ","A"]
-console.log(reverseString(["A"," ","m","a","n",","," ","a"," ","p","l","a","n",","," ","a"," ","c","a","n","a","l",":"," ","P","a","n","a","m","a"]));
+// // example 3: ["a","m","a","n","a","P"," ",":","l","a","n","a","c"," ","a"," ",",","n","a","l","p"," ","a"," ",",","n","a","m"," ","A"]
+// console.log(reverseString(["A"," ","m","a","n",","," ","a"," ","p","l","a","n",","," ","a"," ","c","a","n","a","l",":"," ","P","a","n","a","m","a"]));

@@ -40,43 +40,54 @@ var toGoatLatin = function (S) {
         "u": 1,
         "U": 1
     }
-    let len = S.length;
-    let addOn = "ma";
-    // let word = "";
-    let cons = "";
-    let ans = "";
-    for (let i = 0; i < len; i++) {
-        console.log(S[i]);
-        if (S[i] === " ") {
-            addOn = addOn + "a";
-        } else {
-            for (let j = i; j < len; j++) {
-                i = j;
-                if(S[j] === " "){
-                    break;
-                }
-                if (!(S[i] in vowels)) {
-                    cons = S[i];
-                    j++;
-                    // console.log(cons);
-                }
-                ans = ans + S[j];
-                j++;
-                // console.log(ans)
-                
-            }
-            ans = ans + addOn + " ";
-            if (cons != "") {
-                ans = ans + cons;
-            }
-            cons = "";
-            
-        }
-    }
-    return ans;
+    let arr = S.trim().split(" ");
+
+
+    return arr;
+    
 };
 
 
-console.log(toGoatLatin("I speak Goat Latin") + " == Imaa peaksmaaa oatGmaaaa atinLmaaaaa");
-console.log();
-console.log(toGoatLatin("The quick brown fox jumped over the lazy dog") + " == heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa");
+// console.log(toGoatLatin("I speak Goat Latin") + " == Imaa peaksmaaa oatGmaaaa atinLmaaaaa");
+// console.log();
+// console.log(toGoatLatin("The quick brown fox jumped over the lazy dog") + " == heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa");
+
+
+
+
+// let len = S.length;
+//     let addOn = "ma";
+//     // let word = "";
+//     let cons = "";
+//     let ans = "";
+//     for (let i = 0; i < len; i++) {
+//         console.log(S[i]);
+//         if (S[i] === " ") {
+//             addOn = addOn + "a";
+//         } else {
+//             for (let j = i; j < len; j++) {
+//                 i = j;
+//                 if(S[j] === " "){
+//                     break;
+//                 }
+//                 if (!(S[i] in vowels)) {
+//                     cons = S[i];
+//                     j++;
+//                     // console.log(cons);
+//                 }
+//                 ans = ans + S[j];
+//                 j++;
+//                 // console.log(ans)
+                
+//             }
+//             ans = ans + addOn + " ";
+//             if (cons != "") {
+//                 ans = ans + cons;
+//             }
+//             cons = "";
+            
+//         }
+//     }
+//     return ans;
+
+
