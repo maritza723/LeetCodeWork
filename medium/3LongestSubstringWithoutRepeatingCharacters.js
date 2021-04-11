@@ -56,7 +56,7 @@ var lengthOfLongestSubstring = function(s) {
     return ans;
 };
 
-console.log(lengthOfLongestSubstring("abcabcbb") + " == 3");
+// console.log(lengthOfLongestSubstring("abcabcbb") + " == 3");
 // console.log();
 // console.log(lengthOfLongestSubstring("bbbbb") + " == 1");
 // console.log();
