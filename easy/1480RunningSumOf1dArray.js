@@ -36,11 +36,15 @@ var runningSum = function (nums) {
 
 };
 // example 1: [1,3,6,10]
-console.log(runningSum([1, 2, 3, 4]));
+// console.log(runningSum([1, 2, 3, 4]));
 
 // example 2: [1,2,3,4,5]
-console.log(runningSum([1, 1, 1, 1, 1]));
+// console.log(runningSum([1, 1, 1, 1, 1]));
 
 // Accepted! 06.19.2020
 // Runtime: 72 ms, faster than 70.23% of JavaScript online submissions for Running Sum of 1d Array.
 // Memory Usage: 36 MB, less than 100.00% of JavaScript online submissions for Running Sum of 1d Array.
+
+// Accepted 05.03.2021
+// Runtime: 76 ms, faster than 88.73% of JavaScript online submissions for Running Sum of 1d Array.
+// Memory Usage: 38.8 MB, less than 74.79% of JavaScript online submissions for Running Sum of 1d Array.
